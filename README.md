@@ -34,11 +34,6 @@ model = Sequential([
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 
-
-Elbette! Aşağıda, projeniz için bir README dosyasını Markdown formatında yazdım:
-
-markdown
-Kodu kopyala
 # Maternal Health Risk Prediction
 
 Bu proje, anne sağlığı risklerini tahmin etmek için oluşturulmuş bir makine öğrenmesi modelini içerir. Model, annelerin çeşitli sağlık ölçütlerini kullanarak risk seviyelerini (düşük, orta, yüksek) tahmin etmeyi amaçlamaktadır.
