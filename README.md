@@ -16,20 +16,6 @@ Bu projede kullanılan veri seti, Kaggle'dan alınmıştır ve aşağıdaki baş
 
 Veri setine [buradan](https://www.kaggle.com/datasets/csafrit2/maternal-health-risk-data) ulaşabilirsiniz.
 
-# Model
-
-Model, Keras kullanılarak oluşturulmuştur ve aşağıdaki yapıya sahiptir:
-
-```python
-# Model oluşturma
-model = Sequential([
-    Dense(64, activation='relu', input_shape=(X_train.shape[1],)),
-    Dropout(0.25),  # Dropout oranı %25
-    Dense(32, activation='relu'),
-    Dropout(0.25),  # Dropout oranı %25
-    Dense(1, activation='sigmoid')
-])
-
 ## Modeli derleme
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
