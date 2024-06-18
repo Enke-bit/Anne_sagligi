@@ -16,7 +16,7 @@ Bu projede kullanılan veri seti, Kaggle'dan alınmıştır ve aşağıdaki baş
 
 Veri setine [buradan](https://www.kaggle.com/datasets/csafrit2/maternal-health-risk-data) ulaşabilirsiniz.
 
-## Model
+# Model
 
 Model, Keras kullanılarak oluşturulmuştur ve aşağıdaki yapıya sahiptir:
 
@@ -30,11 +30,11 @@ model = Sequential([
     Dense(1, activation='sigmoid')
 ])
 
-# Modeli derleme
+## Modeli derleme
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 
-# Maternal Health Risk Prediction
+## Maternal Health Risk Prediction
 
 Bu proje, anne sağlığı risklerini tahmin etmek için oluşturulmuş bir makine öğrenmesi modelini içerir. Model, annelerin çeşitli sağlık ölçütlerini kullanarak risk seviyelerini (düşük, orta, yüksek) tahmin etmeyi amaçlamaktadır.
 
